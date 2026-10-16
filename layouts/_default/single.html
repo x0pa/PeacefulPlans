@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ $ribbon := "ribbon-plum" }}
+{{ if eq .Params.pillar "Directives and Care" }}{{ $ribbon = "ribbon-sage" }}{{ end }}
+{{ if eq .Params.pillar "Funerals and Burial" }}{{ $ribbon = "ribbon-gold" }}{{ end }}
+{{ if eq .Params.pillar "When Someone Dies" }}{{ $ribbon = "ribbon-clay" }}{{ end }}
+{{ if eq .Params.pillar "Executors and Probate" }}{{ $ribbon = "ribbon-clay" }}{{ end }}
+<article class="wrap article-wrap">
+  <p class="crumbs"><a href="/guides/">Latest Guides</a> › {{ .Title }}</p>
+  <div class="reading-card">
+    <span class="ribbon {{ $ribbon }}">{{ .Params.pillar }}</span>
+    <h1>{{ .Title }}</h1>
+    <p class="standfirst">{{ .Description }}</p>
+    <p class="article-meta">{{ .ReadingTime }} min read · Pillar: {{ .Params.pillar }} · Last verified {{ .Params.lastverified }}</p>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    <aside class="sticky-note inline-note">
+      <p>Tip from Dawn Garden: revisit your plan each year, or after major life changes. Keep a copy with your executor for peace of mind.</p>
+    </aside>
+    <div class="checklist-cta">
+      <div>
+        <strong>Readiness Checklist: take the first step</strong>
+        <p>See exactly where your own plan stands, province by province, in about two minutes.</p>
+      </div>
+      <a class="btn btn-gold" href="/tools/readiness-checklist/">Open the checklist →</a>
+    </div>
+    <section class="sources-box">
+      <h2>Sources and last verified</h2>
+      <p>Last verified: {{ .Params.lastverified }}</p>
+      <ul>
+        {{ range .Params.sources }}
+        <li><a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+      <p class="disclaimer-line">General information only, not legal advice. Laws vary by province and change over time. For your own situation, speak with a lawyer or, in Quebec, a notary in your province. See our full <a href="/disclaimer/">disclaimer</a>.</p>
+    </section>
+  </div>
+  {{ $guides := sort (where site.RegularPages "Section" "guides") "Params.chapter" }}
+  {{ $prev := false }}{{ $next := false }}
+  {{ range $i, $g := $guides }}
+    {{ if eq $g.RelPermalink $.RelPermalink }}
+      {{ if gt $i 0 }}{{ $prev = index $guides (sub $i 1) }}{{ end }}
+      {{ if lt (add $i 1) (len $guides) }}{{ $next = index $guides (add $i 1) }}{{ end }}
+    {{ end }}
+  {{ end }}
+  <nav class="chapter-nav" aria-label="Guides">
+    {{ with $prev }}<a class="btn btn-outline" href="{{ .RelPermalink }}">← Previous guide</a>{{ end }}
+    {{ with $next }}<a class="btn btn-sage" href="{{ .RelPermalink }}">Next guide →</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

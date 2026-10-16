@@ -1,0 +1,56 @@
+{{ define "main" }}
+<section class="wrap article-wrap">
+  <p class="crumbs"><a href="/tools/">Tools</a> › {{ .Title }}</p>
+  <div class="reading-card">
+    <h1>{{ .Title }}</h1>
+    <p class="standfirst">{{ .Description }}</p>
+    <div class="prose">{{ .Content }}</div>
+    <form class="tool-form" id="checklistForm">
+      <label class="field">
+        <span>Your province or territory</span>
+        <select id="provinceSelect">
+          <option value="MB" selected>Manitoba</option>
+          <option value="ON">Ontario</option>
+          <option value="BC">British Columbia</option>
+          <option value="AB">Alberta</option>
+          <option value="SK">Saskatchewan</option>
+          <option value="QC">Quebec</option>
+          <option value="NS">Nova Scotia</option>
+          <option value="NB">New Brunswick</option>
+          <option value="PE">Prince Edward Island</option>
+          <option value="NL">Newfoundland and Labrador</option>
+          <option value="YT">Yukon</option>
+          <option value="NT">Northwest Territories</option>
+          <option value="NU">Nunavut</option>
+        </select>
+      </label>
+      <p class="doc-names" id="docNames"></p>
+      <fieldset class="check-group">
+        <legend>Tick what is already in place</legend>
+        <label class="check"><input type="checkbox" class="ck"> <span>A will, signed and witnessed the way my province requires</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span id="lblDirective">A directive naming who can make care decisions for me</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span id="lblPoa">A power of attorney naming who can handle money and property for me</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>An executor who knows they are named, and who knows where my will lives</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>A backup executor, in case my first choice cannot act</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>My funeral wishes written down, burial or cremation and plot or no plot</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>Guardians named for my minor children, if that applies to me</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>Beneficiary designations reviewed on insurance and registered accounts</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>A documents list for my executor: accounts, policies, deeds, and where each one lives</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>A note about my digital accounts and how my executor can find them</span></label>
+      </fieldset>
+      <div class="tool-result" id="checklistResult" aria-live="polite">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <p class="result-head" id="resultHead">Your readiness: 0 of 10 in place</p>
+        <p id="resultText">Tick the items above and your personal list of what is missing will appear here, with links to the guides that walk through each one.</p>
+        <ul id="missingList"></ul>
+      </div>
+      <p class="tool-actions">
+        <button type="button" class="btn btn-sage" onclick="window.print()">Print my checklist</button>
+        <a class="btn btn-outline" href="/tools/documents-checklist/">Open the documents checklist</a>
+      </p>
+      <p class="tool-note">Nothing you tick or type here is sent anywhere or stored. It all stays in your browser, on this device. General information only, not legal advice.</p>
+    </form>
+  </div>
+</section>
+{{ end }}
+{{ define "scripts" }}<script src="/js/checklist.js"></script>{{ end }}

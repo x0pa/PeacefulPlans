@@ -1,0 +1,19 @@
+baseURL: "https://peacefulplans.ca/"
+languageCode: "en-ca"
+title: "Peaceful Plans"
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "term", "RSS"]
+summaryLength: 30
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+permalinks:
+  guides: "/guides/:slug/"
+  tools: "/tools/:slug/"
+params:
+  description: "Wills, medical directives, executors, funerals and burial plots explained in plain language for Canadians."
+  tagline: "Your final chapter, well told."
+  ogImage: "/images/hero-sunrise.webp"
+  cssVersion: "20261015"
+  gaID: ""

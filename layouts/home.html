@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1>Your final chapter, well told.</h1>
+      <p class="standfirst">Wills, medical directives, executors, funerals and burial plots explained in plain language for Canadians. Clear, calm, and compassionate guidance to help you plan with confidence.</p>
+      <p><a class="btn btn-sage" href="/tools/readiness-checklist/">Start the readiness checklist →</a></p>
+      <p class="hero-micro">Free · No legal jargon · Created for Canadians, by Canadians</p>
+    </div>
+    <figure class="hero-art">
+      <img src="/images/hero-sunrise.webp" alt="A golden sun rising over a garden hedge at dawn" width="1200" height="800">
+    </figure>
+  </div>
+</section>
+
+<section class="wrap chapters">
+  <h2>Latest Guides</h2>
+  <p class="section-sub">Clear, practical guides to help you move step by step at your own pace.</p>
+  <div class="card-grid">
+    {{ range sort (where site.RegularPages "Section" "guides") "Params.chapter" }}
+      {{ partial "chapter-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+<section class="tools-band">
+  <div class="wrap">
+    <h2>Calm tools, ready when you are</h2>
+    <div class="card-grid">
+      {{ range where site.RegularPages "Section" "tools" }}
+      <article class="tool-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Description }}</p>
+        <a class="read-link" href="{{ .RelPermalink }}">Open tool →</a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="wrap about-strip">
+  <div class="about-copy">
+    <h2>Everything in one place, before your family needs it</h2>
+    <p>Today the answers live in fragments. A will lives with lawyers. A medical directive lives with a provincial health ministry under a name most people have never heard. A burial plot lives with a cemetery. Probate lives with the courts. Peaceful Plans gathers the whole picture in one calm place, so a family can assemble it on an ordinary afternoon, at their own pace, while everyone is well.</p>
+    <p><a class="btn btn-outline" href="/about/">About Peaceful Plans</a></p>
+  </div>
+  <aside class="sticky-note" aria-label="A tip">
+    <p>Tip from Dawn Garden: revisit your plan each year, or after major life changes. Keep a copy with your executor for peace of mind.</p>
+  </aside>
+</section>
+{{ end }}

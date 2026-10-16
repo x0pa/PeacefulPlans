@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>{{ if .IsHome }}Peaceful Plans · Your final chapter, well told{{ else }}{{ .Title }} · Peaceful Plans{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:site_name" content="Peaceful Plans">
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "guides") }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}Peaceful Plans · Your final chapter, well told{{ else }}{{ .Title }} · Peaceful Plans{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ site.Params.ogImage | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}Peaceful Plans · Your final chapter, well told{{ else }}{{ .Title }} · Peaceful Plans{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ site.Params.ogImage | absURL }}">
+{{ if .IsHome }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Peaceful Plans","url":"https://peacefulplans.ca/","description":{{ site.Params.description | jsonify }},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"}}
+</script>
+{{ else if and .IsPage (eq .Section "guides") }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":{{ .Title | jsonify }},"description":{{ with .Description }}{{ . | jsonify }}{{ else }}{{ site.Params.description | jsonify }}{{ end }},"datePublished":{{ .Date.Format "2006-01-02" | jsonify }},"mainEntityOfPage":{{ .Permalink | jsonify }},"author":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"image":{{ site.Params.ogImage | absURL | jsonify }}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peacefulplans.ca/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://peacefulplans.ca/guides/"},{"@type":"ListItem","position":3,"name":{{ .Title | jsonify }},"item":{{ .Permalink | jsonify }}}]}
+</script>
+{{ end }}
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/css/main.css?v={{ site.Params.cssVersion }}">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+{{ with site.Params.gaID }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ . }}');</script>
+{{ end }}
+</head>
+<body>
+<div class="progress-line" id="progressLine" aria-hidden="true"></div>
+{{ partial "header.html" . }}
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+<script src="/js/main.js"></script>
+{{ block "scripts" . }}{{ end }}
+</body>
+</html>

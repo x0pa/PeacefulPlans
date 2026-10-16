@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="wrap list-wrap">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="section-sub">{{ . }}</p>{{ end }}
+  {{ with .Content }}<div class="prose list-intro">{{ . }}</div>{{ end }}
+  <div class="card-grid">
+    {{ if eq .Section "tools" }}
+      {{ range .Pages }}
+      <article class="tool-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Description }}</p>
+        <a class="read-link" href="{{ .RelPermalink }}">Open tool →</a>
+      </article>
+      {{ end }}
+    {{ else }}
+      {{ range sort .Pages "Params.chapter" }}
+        {{ partial "chapter-card.html" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

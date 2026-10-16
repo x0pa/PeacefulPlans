@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="wrap article-wrap">
+  <p class="crumbs"><a href="/tools/">Tools</a> › {{ .Title }}</p>
+  <div class="reading-card">
+    <h1>{{ .Title }}</h1>
+    <p class="standfirst">{{ .Description }}</p>
+    <div class="prose">{{ .Content }}</div>
+    <form class="tool-form">
+      {{ $groups := slice
+        (dict "name" "Identity and family" "items" (slice "Government identification and Social Insurance Number record" "Birth certificate or citizenship papers" "Marriage, partnership, or divorce papers" "The will, and any codicils" "Directive and power of attorney documents"))
+        (dict "name" "Money and property" "items" (slice "Bank and investment account list, with institutions" "Insurance policies: life, home, auto, and group benefits" "Property deeds and mortgage papers" "Vehicle registrations" "Registered account beneficiary designations"))
+        (dict "name" "Funeral and final arrangements" "items" (slice "Burial plot papers or cremation wishes" "Funeral prearrangement contract, if one exists" "Organ and tissue donation registration" "Letters of wishes and personal gifts list"))
+        (dict "name" "Taxes, work, and digital life" "items" (slice "Last two tax returns and Canada Revenue Agency account note" "Employer and pension contact details" "Password manager or digital accounts note" "Contact list: lawyer or notary, accountant, funeral home"))
+      }}
+      {{ range $groups }}
+      <fieldset class="check-group">
+        <legend>{{ .name }}</legend>
+        {{ range .items }}
+        <label class="doc-row">
+          <input type="checkbox" class="ck">
+          <span>{{ . }}</span>
+          <input type="text" class="where" placeholder="Where it lives" aria-label="Where it lives: {{ . }}">
+        </label>
+        {{ end }}
+      </fieldset>
+      {{ end }}
+      <p class="tool-actions"><button type="button" class="btn btn-sage" onclick="window.print()">Print this checklist</button></p>
+      <p class="tool-note">Nothing you type here is sent anywhere or stored. Print it, fill the rest in by hand if you prefer, and keep it where your executor can find it. General information only, not legal advice.</p>
+    </form>
+  </div>
+</section>
+{{ end }}
