@@ -1,4 +1,4 @@
 ---
 title: "Latest Guides"
-description: "Clear, practical guides to help you move step by step at your own pace. Every guide is sourced to the official provincial or federal source and carries a last verified stamp."
+description: "Clear, practical guides to end of life preparation in Canada, moving step by step at your own pace, each sourced to its official source and verified."
 ---

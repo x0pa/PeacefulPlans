@@ -4,7 +4,7 @@ slug: "burial-plots-in-canada"
 date: 2026-10-15
 chapter: 6
 pillar: "Funerals and Burial"
-description: "Buying a burial plot in Canada means buying interment rights, the right to be buried in a space the cemetery continues to own and care for, and the details live in the contract and the cemetery bylaws."
+description: "Buying a burial plot in Canada means buying interment rights, not land. What the right covers, what it costs, and where the details live in the contract."
 lastverified: 2026-10-15
 sources:
   - name: "Bereavement Authority of Ontario"

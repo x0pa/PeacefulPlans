@@ -4,7 +4,7 @@ slug: "should-you-buy-a-burial-plot-ahead-of-time"
 date: 2026-10-15
 chapter: 7
 pillar: "Funerals and Burial"
-description: "Buying a burial plot early can lock in a place and a price and spare your family a hard task, but it can also strand money if you move, change your mind, or discover the resale rules too late."
+description: "Should you buy a burial plot ahead of time? The honest case for and against, the price questions that matter, and the resale rules to check first."
 lastverified: 2026-10-15
 sources:
   - name: "Bereavement Authority of Ontario"

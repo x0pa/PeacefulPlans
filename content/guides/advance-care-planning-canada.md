@@ -4,7 +4,7 @@ slug: "advance-care-planning-canada"
 date: 2026-10-15
 chapter: 5
 pillar: "Directives and Care"
-description: "Advance care planning is mostly a conversation about your values and wishes, held while you are well, so the person you trust can speak for you if you ever cannot speak for yourself."
+description: "Advance care planning is a conversation about your values and wishes, held while you are well, so someone you trust can speak for you if you cannot."
 lastverified: 2026-10-15
 sources:
   - name: "Advance Care Planning Canada"

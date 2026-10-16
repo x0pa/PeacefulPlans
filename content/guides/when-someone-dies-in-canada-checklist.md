@@ -4,7 +4,7 @@ slug: "when-someone-dies-in-canada-checklist"
 date: 2026-10-15
 chapter: 8
 pillar: "When Someone Dies"
-description: "An ordered, calm checklist for the practical steps after a death in Canada, from the first phone calls on the first day through the certificates, notifications, and benefit applications of the first month."
+description: "When someone dies in Canada: an ordered checklist for the first day, the first week, and the first month, from first calls to benefits and estate steps."
 lastverified: 2026-10-15
 sources:
   - name: "Service Canada, Canada Pension Plan Death Benefit"
