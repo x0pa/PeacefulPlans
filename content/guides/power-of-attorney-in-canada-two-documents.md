@@ -17,6 +17,16 @@ sources:
     url: "https://www.curateur.gouv.qc.ca/"
   - name: "Public Guardian and Trustee of Manitoba"
     url: "https://www.manitoba.ca/publictrustee/"
+shortanswer: "In most of Canada there are two separate documents. A power of attorney for property lets someone manage your money and property, and a second document, whose name changes by province, lets someone make health and personal care decisions for you. One document does not do the other document's job, and most adults need both."
+faqs:
+  - q: "What is the difference between a power of attorney and a will?"
+    a: "A power of attorney works while you are alive and ends at your death. A will does nothing while you are alive and only takes effect at death. The person you name in a power of attorney, your attorney, has no authority after you die. That authority passes to your executor."
+  - q: "What is an enduring or continuing power of attorney?"
+    a: "An ordinary power of attorney ends if you lose mental capacity, which is when your family needs it most. An enduring power of attorney in the western provinces, or a continuing power of attorney in Ontario, is written to continue through incapacity, in the way that province's law requires."
+  - q: "What is the health document called in my province?"
+    a: "Ontario calls it a Power of Attorney for Personal Care. Alberta uses a Personal Directive, British Columbia a Representation Agreement, Manitoba a health care directive, and Quebec a Protection Mandate. The idea is the same everywhere: name who decides, and record what you would want."
+  - q: "Can my attorney make health decisions for me?"
+    a: "Only if the document you signed gives that authority. A power of attorney for property covers money and property, not medical care. Health and personal care decisions belong to the second document, or to the substitute decision maker your province's law recognizes."
 ---
 
 Ask a room of Canadians whether they have a power of attorney and most will answer as if there were one document with that name. In most of Canada there are two, and they do entirely different work. One looks after your money and property if you cannot. The other speaks for your care and health when you cannot speak for yourself. Confusing them is easy, common, and worth clearing up, because a family that discovers the gap during a health crisis has run out of calm options. This guide sets the two side by side.
@@ -33,7 +43,7 @@ The second document covers personal care and health decisions: where you live, w
 
 You may name the same person for both documents, and many spouses do exactly that. You may also split them: a methodical daughter for the money, a steadfast son for the care. Both choices are normal. What matters is that each role is filled by someone suited to it, who knows they have been named.
 
-## The names change at the provincial border
+## What is the document called in each province?
 
 Here is where Canadians get tripped, because the care document wears a different name in much of the country. In Ontario it is the Power of Attorney for Personal Care. In Alberta the care document is a Personal Directive, and the person you name is called your agent; the money document in Alberta is an Enduring Power of Attorney. In British Columbia the care and health document is a Representation Agreement, naming a representative, while the money side is again an Enduring Power of Attorney. In Manitoba you make an enduring power of attorney for property, and a separate Health Care Directive that can name a proxy to make care decisions for you.
 
@@ -47,7 +57,7 @@ A plain power of attorney, of the ordinary kind once used for a single task, can
 
 Read for that word, or have a lawyer confirm it is there. A power of attorney that quietly expires on incapacity is a plan that fails at the exact moment it was designed for, and families rarely discover the problem in advance.
 
-## What these documents cannot do
+## What can these documents not do?
 
 Neither document lets your attorney change your will, make a new will for you, or give your property away as they please. An attorney must act in your interests, keep records, and stay within the authority you granted. Neither document survives your death, and neither replaces a will; the two sets of papers work in sequence, the powers of attorney covering your lifetime and the will beginning where they end. Knowing the boundary protects the person you name as much as it protects you, because it tells them where their authority stops.
 

@@ -15,6 +15,16 @@ sources:
     url: "https://www.afsrb.ca/"
   - name: "Saskatchewan Financial and Consumer Affairs Authority"
     url: "https://fcaa.gov.sk.ca/"
+shortanswer: "Buying ahead can be a kind gift: it locks in a place and a price and removes a hard purchase from your family's worst week. It can also strand money if you move away, change your wishes, or meet resale rules you did not expect. The deciding questions are how settled your plans are, where you expect to live out your life, and what the contract says about transfers and refunds."
+faqs:
+  - q: "Is buying a burial plot early a good investment?"
+    a: "It is better understood as preplanning than investing. Interment rights are hard to resell, many cemeteries limit or control transfers, and prices do not reliably rise the way sellers sometimes suggest. Buy a plot because your family will use it, not because it might be worth more later."
+  - q: "What happens to my plot if I move to another province?"
+    a: "Your interment rights stay with the cemetery where you bought them. Families in that spot usually try a transfer or resale under the cemetery's rules, ask about a buy back, or keep the plot for a possible return. This is the most common regret with buying ahead, and it is worth picturing before you pay."
+  - q: "Can I get a refund if I change my mind?"
+    a: "Ontario gives buyers 30 days to cancel a contract for interment rights for a full refund, and other provinces have their own consumer protections. After that window, refunds follow the contract, so read the cancellation terms before signing, not after."
+  - q: "What should I ask a cemetery before buying?"
+    a: "Ask for the full price list, what the care fund contribution covers, the opening and closing fees, marker rules and costs, transfer and resale terms, and what happens if the cemetery is sold. A cemetery that answers all of it in writing is showing you how it does business."
 ---
 
 ## A fair question with no single answer
@@ -47,7 +57,7 @@ This guide lays out the honest case on both sides. There is no product being sol
 
 **Family patterns shift.** A family plot made sense when everyone lived in one town for life. With children scattered across provinces, a central family plot may be visited by no one, while separate local choices near where each person settles get visited often. There is only an honest look at how your family actually lives now.
 
-## Questions to ask a cemetery before paying anything
+## What should you ask a cemetery before paying anything?
 
 Take this list with you, literally. A good cemetery will welcome every question on it, answer in writing, and send you home to think. Pressure to sign today is your clearest signal to choose a different cemetery.
 

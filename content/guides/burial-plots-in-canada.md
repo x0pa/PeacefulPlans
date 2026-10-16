@@ -15,6 +15,16 @@ sources:
     url: "https://www.afsrb.ca/"
   - name: "Funeral Board of Manitoba"
     url: "https://www.funeralboard.mb.ca/"
+shortanswer: "Buying a burial plot in Canada means buying interment rights: the right to be buried in a particular space that the cemetery continues to own and maintain. The details that matter, what the right includes, what it costs to open and close the grave, and what happens if you move, live in the purchase contract and the cemetery bylaws, so read both before paying."
+faqs:
+  - q: "Do I own the land when I buy a burial plot?"
+    a: "No. You buy interment rights, permission to be buried in that space, while the cemetery keeps ownership of the land and responsibility for the grounds. Your rights are recorded by the cemetery, and the contract and bylaws set out exactly what those rights include."
+  - q: "What is a care and maintenance fund?"
+    a: "In Ontario, and in many other provinces, cemeteries must keep a care and maintenance trust fund for the long term care of the grounds. A set portion of each interment rights sale goes into the fund, and the income it earns pays for upkeep."
+  - q: "Can I sell or transfer my burial plot later?"
+    a: "Sometimes. Many cemeteries restrict resale, require the transfer to go through the cemetery office, or offer to buy the rights back under a set formula instead. The rules sit in your contract and the provincial regulator's framework, and they are one of the most important things to check before buying."
+  - q: "What extra costs come with a burial plot?"
+    a: "The plot is only the first line. Families also pay for opening and closing the grave, a burial vault or liner in many cemeteries, the marker or monument and its foundation, and sometimes weekend or seasonal fees. Ask for the cemetery's full price list before comparing options, which Ontario cemeteries must provide."
 ---
 
 ## The sentence that changes everything
@@ -25,7 +35,7 @@ In Canada, what you buy from a cemetery is almost always interment rights. You a
 
 You are not responsible for mowing, drainage, roads, or the tree that falls in a storm. The cemetery is. Your family holds a recorded right that a named person, the interment rights holder, controls. Everything else in this guide follows from that one distinction.
 
-## What interment rights actually include
+## What do interment rights actually include?
 
 Interment rights usually cover a defined space and a defined use. A traditional grave may allow one full burial, or a full burial plus one or more sets of cremated remains, depending on the cemetery bylaws. A niche in a columbarium holds cremated remains in an urn. A crypt in a mausoleum holds a casket above ground. Each arrangement is spelled out in the contract and the bylaws, and they vary more from cemetery to cemetery than most buyers expect.
 
@@ -33,7 +43,7 @@ Your rights normally include the right to say who may be buried in that space, w
 
 Read for the details people miss. How many burials does this grave actually allow, of which kinds? Can cremated remains be added later, and at what cost? Are rights for one named person only, or for a family? What happens to unused rights generations from now? Good cemeteries answer these questions in writing without hesitation.
 
-## Care and maintenance funds
+## What is a care and maintenance fund?
 
 Part of the price of interment rights, and part of the price of a marker, usually goes into a care and maintenance fund. In some provinces this contribution is set by law. Ontario, for example, requires cemeteries to place a regulated share of the price into a trust fund for exactly this purpose, and its regulator, the Bereavement Authority of Ontario, oversees the system.
 

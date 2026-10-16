@@ -142,3 +142,12 @@ a{color:var(--sage-deep)}
   .reading-card{box-shadow:none;border-radius:0;padding:0}
   .chapter-card,.tool-card{box-shadow:none}
 }
+
+/* Short answer + FAQ (AEO batch, 2026-10-15) */
+.short-answer{background:var(--card);border:1px solid #E7DFEF;border-left:5px solid var(--gold);border-radius:var(--radius);padding:1rem 1.3rem;margin:1.4rem 0;box-shadow:var(--shadow)}
+.short-answer p{margin:.2rem 0}
+.short-answer-label{font-family:"Nunito Sans",sans-serif;font-weight:800;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep)}
+.faq-section{margin-top:2.2rem;border-top:1px solid #eee;padding-top:1.2rem}
+.faq-item{margin-bottom:1.1rem}
+.faq-item h3{margin-bottom:.3rem}
+.faq-item p{margin-top:0}

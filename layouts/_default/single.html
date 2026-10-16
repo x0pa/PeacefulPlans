@@ -11,6 +11,12 @@
     <h1>{{ .Title }}</h1>
     <p class="standfirst">{{ .Description }}</p>
     <p class="article-meta">{{ .ReadingTime }} min read · Pillar: {{ .Params.pillar }} · Last verified {{ .Params.lastverified }}</p>
+    {{ with .Params.shortanswer }}
+    <aside class="short-answer">
+      <p class="short-answer-label">The short answer</p>
+      <p>{{ . }}</p>
+    </aside>
+    {{ end }}
     <div class="prose">
       {{ .Content }}
     </div>
@@ -24,6 +30,17 @@
       </div>
       <a class="btn btn-gold" href="/tools/readiness-checklist/">Open the checklist →</a>
     </div>
+    {{ with .Params.faqs }}
+    <section class="faq-section">
+      <h2>Common questions</h2>
+      {{ range . }}
+      <div class="faq-item">
+        <h3>{{ .q }}</h3>
+        <p>{{ .a }}</p>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
     <section class="sources-box">
       <h2>Sources and last verified</h2>
       <p>Last verified: {{ .Params.lastverified }}</p>

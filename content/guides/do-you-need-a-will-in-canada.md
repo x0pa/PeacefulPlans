@@ -15,17 +15,27 @@ sources:
     url: "https://laws-lois.justice.gc.ca/"
   - name: "Public Guardian and Trustee of Manitoba"
     url: "https://www.manitoba.ca/publictrustee/"
+shortanswer: "Yes, almost every adult in Canada benefits from a will. Without one, your province's intestacy rules decide who gets your property, who settles your estate, and who may raise your young children. A will lets you make those choices yourself, and it usually makes settling the estate faster and calmer for your family."
+faqs:
+  - q: "What happens if I die without a will in Canada?"
+    a: "Your estate is divided under your province's intestacy rules, which follow a set order of relatives. The court appoints someone to settle the estate, your wishes about guardians for young children carry far less weight, and the process usually takes longer and costs more than settling an estate with a clear will."
+  - q: "Does a will cover everything I own?"
+    a: "No. A will generally covers property in your name alone. Assets with a named beneficiary, such as RRSPs, TFSAs, and life insurance, usually pass directly to that person, and jointly owned property usually passes to the surviving owner. Your will and your beneficiary designations need to agree with each other."
+  - q: "Is a will made in one province valid in another?"
+    a: "Usually yes. A will that was valid where it was made is generally recognized across Canada. But the rules about what it can do, and the probate process, follow the province where your property sits, so a will should be reviewed after any move to a new province."
+  - q: "At what age can I make a will in Canada?"
+    a: "In most provinces you must be at least 18, and some set the age at 19, matching the provincial age of majority. There are narrow exceptions, for example for members of the armed forces in some provinces."
 ---
 
 Almost everyone knows they should probably have a will. Far fewer people can say what actually happens without one, and that unknown is usually scarier than the reality. The reality is not chaos. It is a set of provincial rules, written in advance, that divide your estate for you. This guide explains what a will does, what it cannot do, and how those backup rules work, so you can decide for yourself whether the default plan is the plan you want.
 
-## What a will actually does
+## What does a will actually do?
 
 A will is a legal document that speaks from the moment of your death. In it, you name an executor, the person or institution that gathers your assets, pays your debts and taxes, and distributes what remains. You say who receives your property, from the house and the bank accounts down to specific belongings that carry meaning far beyond their price. If you have young children, you can name a guardian for them and set up trusts that hold their share until an age you choose, rather than handing a large sum to an eighteen year old all at once.
 
 A will also lets you do quieter, kinder things. You can leave a gift to a charity you care about. You can say who should take the family cottage, and on what terms. You can appoint someone to care for a pet. None of these wishes carries legal weight simply because your family knows about them. They carry weight because they are written in a valid will.
 
-## What a will does not control
+## What does a will not control?
 
 A will governs more than most people expect, and less than many assume. Some assets pass outside the will entirely, according to their own paperwork. Life insurance with a named beneficiary is paid directly to that person. Registered accounts such as a TFSA or an RRSP with a named beneficiary usually pass the same way. Property held jointly with a right of survivorship, common between spouses, passes to the surviving owner automatically.
 

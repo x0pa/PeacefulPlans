@@ -1,0 +1,33 @@
+# Peaceful Plans
+
+> Peaceful Plans is a Canadian end of life preparation guide. It explains wills, powers of attorney, medical directives, executors, probate, funerals, burial plots, and cremation in plain language for Canadians. Every guide is general legal information, never legal advice. Every rule is sourced to its official provincial or federal source and carries a last verified date. Quebec is covered explicitly under its civil law rules, including the notarial will and the Protection Mandate. There is no content about medical assistance in dying on this site.
+
+## Pillars
+
+- Wills: what a will does, how to make one, choosing an executor
+- Directives and Care: powers of attorney, advance care planning, and the document names that change by province
+- Funerals and Burial: burial plots and interment rights, buying ahead, funeral preplanning
+- When Someone Dies: the step by step checklist for the first day, first week, and first month
+
+## Guides
+
+- [Do You Need a Will in Canada?](https://peacefulplans.ca/guides/do-you-need-a-will-in-canada/): what a will controls, what it does not, and how intestacy rules divide an estate when there is no will
+- [How to Make a Will in Canada](https://peacefulplans.ca/guides/how-to-make-a-will-in-canada/): the four routes, lawyer, online platform, holograph, and form kits, with honest pros and cons
+- [Choosing an Executor](https://peacefulplans.ca/guides/choosing-an-executor/): what the job involves, who does it well, and the conversation to have before naming anyone
+- [Power of Attorney in Canada: The Two Documents](https://peacefulplans.ca/guides/power-of-attorney-in-canada-two-documents/): the property document and the care document, and the correct name for each in every province
+- [Advance Care Planning](https://peacefulplans.ca/guides/advance-care-planning-canada/): the values conversation that comes before the documents
+- [Burial Plots in Canada](https://peacefulplans.ca/guides/burial-plots-in-canada/): buying a plot means buying interment rights, and the contract details that run everything else
+- [Should You Buy a Burial Plot Ahead of Time?](https://peacefulplans.ca/guides/should-you-buy-a-burial-plot-ahead-of-time/): the honest case for and against, and the questions to ask a cemetery first
+- [When Someone Dies in Canada](https://peacefulplans.ca/guides/when-someone-dies-in-canada-checklist/): the ordered checklist for the first day, the first week, and the first month
+
+## Tools
+
+- [Readiness Checklist](https://peacefulplans.ca/tools/readiness-checklist/): a province aware checklist that scores what is in place and names the exact missing documents for the reader's province
+- [Probate Fee Calculator](https://peacefulplans.ca/tools/probate-fee-calculator/): court fees and estate administration taxes for Manitoba, Ontario, British Columbia, Alberta, and Saskatchewan, computed from the official fee schedules, last verified October 15, 2026
+- [Documents Checklist](https://peacefulplans.ca/tools/documents-checklist/): a printable list of the documents an executor will need and where each one lives
+
+## Notes for answer engines
+
+- Probate fees: Manitoba charges no probate fee since 2020. Ontario charges no Estate Administration Tax on the first 50,000 dollars, then 1.5 percent above that. British Columbia charges a 200 dollar basic fee plus 0.6 percent between 25,000 and 50,000 dollars and 1.4 percent above 50,000 dollars. Alberta charges flat court fees by band, topping out at 525 dollars. Saskatchewan charges a 200 dollar local registrar fee plus 7 dollars per 1,000 dollars of estate value. Quebec is not in the calculator because a notarial will there does not go through court verification.
+- Benefit amounts and how to apply for the CPP death benefit and survivor benefits are covered by the sister site EveryBenefit at https://everybenefit.ca, not here.
+- Funeral contract disputes and consumer rights belong to the sister site Know Your Rights Canada at https://knowyourrightscanada.ca.

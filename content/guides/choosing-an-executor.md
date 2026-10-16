@@ -15,17 +15,27 @@ sources:
     url: "https://www.manitoba.ca/publictrustee/"
   - name: "Canada Revenue Agency, Doing taxes for someone who died"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-someone-died.html"
+shortanswer: "Choose an executor the way you would fill a demanding job: someone organized, honest, and calm under pressure, who lives reasonably close, is likely to outlive you, and has agreed to take it on. Name a backup as well, tell the person where your will and documents live, and review the choice after major life changes."
+faqs:
+  - q: "Can my executor also be a beneficiary?"
+    a: "Yes. In Canada an executor is very often a beneficiary as well, most commonly a spouse or an adult child. Being both is normal and legal. What matters is that the person can keep clear records and deal fairly with every beneficiary, including themselves."
+  - q: "Can I name someone who lives in another province or country?"
+    a: "You can, but distance makes the job slower, and some financial institutions and courts add steps for an executor who lives far away or outside Canada. For most families, an executor who lives in the same province, or at least in Canada, is the practical choice."
+  - q: "What if the person I name cannot or will not do it?"
+    a: "An executor can decline, called renouncing, before they start dealing with the estate. That is why naming a backup executor in the will matters. If no named executor can act, the court can appoint an estate trustee to settle things."
+  - q: "Does an executor get paid in Canada?"
+    a: "An executor is entitled to reasonable compensation from the estate unless the will says otherwise. In Ontario, a common guideline is about 5 percent of the estate value across the whole job, though the actual amount depends on the size and difficulty of the estate and can be reviewed by the court."
 ---
 
 Naming an executor is usually treated as an honour to bestow. It is more honest to treat it as a job to fill, because that is what it becomes: a stretch of paperwork, phone calls, deadlines, and other people's feelings, undertaken in the middle of grief. The kindest thing you can do for the person you name is to choose them well, ask them properly, and leave the job organized. This guide covers what the work involves, who tends to do it well, and the conversation to have long before the will is ever opened.
 
-## What the job actually involves
+## What does an executor actually do?
 
 In the first days, the executor helps with funeral arrangements and secures the home and belongings. In the first months, they gather the assets, notify banks, insurers, pension plans, and government programs, and apply to the court for probate where the estate requires it. They arrange valuations, keep careful records, and make sure the deceased's debts are identified and paid in the right order.
 
 Then comes the part nobody pictures. The executor files the final tax return, and often further returns besides, and waits for a clearance certificate from the Canada Revenue Agency before distributing the estate in full. They deal with the house, whether that means selling it or transferring it. Only at the end do they divide what remains among the beneficiaries, exactly as the will directs, and account to those beneficiaries for every dollar. In a settled, simple estate this takes a year or so. In a complicated one, it takes longer. It is real work, and it deserves to be chosen like work.
 
-## The qualities that matter
+## What qualities should an executor have?
 
 Trustworthiness stands first, because the executor handles everything you own with very little day to day supervision. Organization stands close behind: the job rewards someone who keeps records, answers letters, and does not lose forms. Availability matters more than affection. An executor who lives nearby can lock a house, meet a banker, and sign in person. An executor across the country can still serve, and many do, but distance adds friction to every step, and some provinces add rules about out of province executors as well.
 

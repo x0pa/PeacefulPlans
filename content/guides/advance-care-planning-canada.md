@@ -15,9 +15,19 @@ sources:
     url: "https://www.ontario.ca/page/power-attorney"
   - name: "Government of British Columbia, Incapacity Planning"
     url: "https://www2.gov.bc.ca/gov/content/health/managing-your-health/incapacity-planning"
+shortanswer: "Advance care planning is the conversation before the documents: thinking about your values and the care you would want, talking it through with the person who may one day speak for you, and writing the outcome down in your province's document. It costs nothing, it can start at any age, and it spares your family from guessing during a crisis."
+faqs:
+  - q: "Is advance care planning the same as a living will?"
+    a: "They are close cousins. Living will is an informal name many Canadians use for the document that records treatment wishes. Advance care planning is the wider process around it: the thinking, the conversation, choosing your decision maker, and then completing your province's document."
+  - q: "Who should I choose to speak for me?"
+    a: "Choose someone who knows your values, can stay calm in a hospital, can speak with doctors clearly, and is willing to follow your wishes even when they are hard. Tell them you have chosen them, and have the actual conversation before any crisis makes it urgent."
+  - q: "Where should I keep my advance care plan?"
+    a: "Keep the signed original somewhere findable at home, give a copy to the person who will speak for you, and tell close family where it lives. Some provinces and health regions also let you note it in your health record. A perfect document that nobody can find does no work."
+  - q: "Can I change my advance care plan later?"
+    a: "Yes. You can update or replace it at any time while you have capacity, and you should review it after major health or life changes. Make sure the newest version is the one your decision maker and family can find, and replace or destroy older copies so nobody follows an outdated one."
 ---
 
-## What advance care planning actually is
+## What is advance care planning?
 
 Advance care planning sounds like paperwork. It is mostly talking.
 
@@ -69,7 +79,7 @@ Territorial rules differ again, and some are newer than others. The safe pattern
 
 Most provinces let you register or store your directive somewhere findable, or advise you to give copies to your decision maker, your doctor, and your local hospital. A directive nobody can find in an emergency does little good, so treat distribution as part of the task.
 
-## Writing it down and keeping it current
+## How do you write it down and keep it current?
 
 When you are ready for the paper step, go slowly and use official sources. Provincial governments publish their forms and guides free of charge. Advance Care Planning Canada, the national program also known as Speak Up, offers workbooks and conversation guides free as well, in plain language, province by province.
 

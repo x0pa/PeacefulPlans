@@ -15,6 +15,16 @@ sources:
     url: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-scope/what-when-someone-died.html"
   - name: "Government of Canada, Life Events and Death"
     url: "https://www.canada.ca/en/employment-social-development/services/benefits/family/death.html"
+shortanswer: "Start with the legal pronouncement of death and the funeral home, which together set most first steps in motion. In the first day, notify close family and locate the will. In the first week, gather proof of death documents and begin notifications. In the first month, settle accounts, apply for the benefits that may be owed, and open the estate process with the executor in the lead."
+faqs:
+  - q: "What is the very first thing to do when someone dies in Canada?"
+    a: "If the death was expected and happens at home, call the person's doctor, the local health line, or emergency services so the death can be legally pronounced. Then contact the funeral home, which arranges transfer and helps with the first registrations and certificates. Everything else can follow in order."
+  - q: "How many death certificates should I get?"
+    a: "Most families order several, because banks, insurers, pension plans, and government programs each ask for proof of death, and some keep the document you send. Your funeral home arranges the provincial registration and can explain how the funeral director's statement of death and the official certificate differ, and who needs which."
+  - q: "What benefits should the family apply for after a death?"
+    a: "A one time CPP death benefit may be payable to the estate or a family member, and survivor benefits may follow for a spouse or children, along with cancelling or transferring benefits the person was receiving. Amounts, eligibility, and how to apply are covered in full on EveryBenefit, our sister site for Canadian benefits."
+  - q: "Who has the legal authority to make decisions after a death?"
+    a: "The executor named in the will, once their authority is confirmed, which in some cases means a court grant of probate. A power of attorney ends at death, so the attorney has no authority afterward. If there is no will, the court can appoint an estate trustee to take on the role."
 ---
 
 ## Before the list, one breath

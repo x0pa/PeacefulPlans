@@ -23,11 +23,16 @@
 </script>
 {{ else if and .IsPage (eq .Section "guides") }}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":{{ .Title | jsonify | safeJS }},"description":{{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ site.Params.description | jsonify | safeJS }}{{ end }},"datePublished":{{ .Date.Format "2006-01-02" | jsonify | safeJS }},"mainEntityOfPage":{{ .Permalink | jsonify | safeJS }},"author":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"image":{{ site.Params.ogImage | absURL | jsonify | safeJS }}}
+{"@context":"https://schema.org","@type":"Article","headline":{{ .Title | jsonify | safeJS }},"description":{{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ site.Params.description | jsonify | safeJS }}{{ end }},"datePublished":{{ .Date.Format "2006-01-02" | jsonify | safeJS }},"dateModified":{{ with .Params.lastverified }}{{ . | jsonify | safeJS }}{{ else }}{{ .Date.Format "2006-01-02" | jsonify | safeJS }}{{ end }},"mainEntityOfPage":{{ .Permalink | jsonify | safeJS }},"author":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"image":{{ site.Params.ogImage | absURL | jsonify | safeJS }}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peacefulplans.ca/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://peacefulplans.ca/guides/"},{"@type":"ListItem","position":3,"name":{{ .Title | jsonify | safeJS }},"item":{{ .Permalink | jsonify | safeJS }}}]}
 </script>
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{{ $items := slice }}{{ range . }}{{ $items = $items | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) }}{{ end }}{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $items | jsonify | safeJS }}
+</script>
+{{ end }}
 {{ end }}
 <link rel="stylesheet" href="/fonts/fonts.css">
 <link rel="stylesheet" href="/css/main.css?v={{ site.Params.cssVersion }}">

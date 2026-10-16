@@ -17,6 +17,16 @@ sources:
     url: "https://www2.gov.bc.ca/gov/content/life-events/death"
   - name: "Curateur public du Québec"
     url: "https://www.curateur.gouv.qc.ca/"
+shortanswer: "There are four honest routes to a valid will in Canada: a lawyer, an online will platform, a will written entirely in your own handwriting, called a holograph will where provinces allow it, and a printed kit or form. All four can be valid. The right route depends on how complicated your life and your wishes are, and every route still needs signing and witnesses that satisfy your province."
+faqs:
+  - q: "Is an online will legal in Canada?"
+    a: "Yes. A will prepared through an online platform can be fully legal in Canada if it is printed, signed, and witnessed the way your province requires. The platform prepares the document. The signing is what makes it valid, and most provinces still require paper signing with witnesses present."
+  - q: "What is a holograph will?"
+    a: "A holograph will is written entirely in your own handwriting and signed by you. Several provinces accept holograph wills without witnesses, including Ontario and Alberta, but the rules differ by province, and a partly typed document can fail the test. Quebec has its own rules for holograph wills."
+  - q: "How many witnesses does a will need in Canada?"
+    a: "Most provinces require two witnesses for a formal will, and in most provinces a witness cannot be a beneficiary or the spouse of a beneficiary. British Columbia also allows electronic wills and remote witnessing under its own rules. Because the details decide validity, they are worth checking for your province before you sign."
+  - q: "How much does a will cost in Canada?"
+    a: "A simple will prepared by a lawyer often costs a few hundred dollars, and online platforms usually charge less. Holograph wills and kits cost little or nothing up front. The honest comparison includes the cost to your family if a cheap will turns out to be unclear or invalid."
 ---
 
 There is more than one honest way to make a valid will in Canada, and the best route depends on how complicated your life is, not on how much you can spend. A simple estate in the hands of a careful person can produce a perfectly good will without a law office. A complicated estate can defeat even a good template. This guide walks through the four routes most Canadians actually use, with the strengths and limits of each stated plainly.
@@ -43,13 +53,13 @@ The appeal is obvious. It costs nothing and can be done tonight. The risks are j
 
 Stationery store kits and free templates sit between the online service and the holograph page. They provide structure: spaces for an executor, for beneficiaries, for guardians. They provide no guidance at all, and their one size language sometimes belongs to another province or another country entirely. If you use one, confirm that it speaks to your province's law, fill in every section including the residue, and follow the signing rules below with extra care, because no one will check your work but the court, later.
 
-## Witnessing, the part people get wrong
+## What do witnesses actually have to do?
 
 Most wills that fail, fail at the signing, not the writing. In most provinces, a typed or printed will must be signed by you in the presence of two witnesses, who watch you sign and then sign themselves in your presence and in each other's. Neither witness should be a beneficiary or the spouse of a beneficiary. In many provinces, a gift to a witness can be struck out even where the rest of the will survives, which is a painful way to learn the rule.
 
 Choose witnesses who are adults, easy to find later, and connected to nothing in the document. Neighbours and coworkers serve well. Some provinces now allow signing by video call under set conditions, a change that began during the pandemic years, but the conditions are specific, and a kitchen table with two people on it remains the safest room in the country for this job. Quebec, again, is its own world: the notarial will, signed before a notary and one witness, is the form most Quebecers use, and it carries advantages no other route in Canada quite matches.
 
-## When a lawyer is genuinely worth it
+## When is a lawyer genuinely worth it?
 
 Some situations repay professional help many times over. A blended family, where fairness has more than one definition. A child or beneficiary with a disability, where a badly structured gift can interrupt benefits. A business, a farm, or property in another province or country. A large estate, a strained family, or any wish to leave someone out who would expect to be in. In each case the will is not really a form. It is a piece of engineering, and it will be load tested by grief.
 
