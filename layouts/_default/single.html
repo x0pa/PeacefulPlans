@@ -5,15 +5,15 @@
 {{ if eq .Params.pillar "When Someone Dies" }}{{ $ribbon = "ribbon-clay" }}{{ end }}
 {{ if eq .Params.pillar "Executors and Probate" }}{{ $ribbon = "ribbon-clay" }}{{ end }}
 <article class="wrap article-wrap">
-  <p class="crumbs"><a href="/guides/">Latest Guides</a> › {{ .Title }}</p>
+  <p class="crumbs"><a href="{{ "/guides/" | relLangURL }}">{{ i18n "nav_guides" }}</a> › {{ .Title }}</p>
   <div class="reading-card">
-    <span class="ribbon {{ $ribbon }}">{{ .Params.pillar }}</span>
+    <span class="ribbon {{ $ribbon }}">{{ .Params.pillarlabel | default .Params.pillar }}</span>
     <h1>{{ .Title }}</h1>
     <p class="standfirst">{{ .Description }}</p>
-    <p class="article-meta">{{ .ReadingTime }} min read · Pillar: {{ .Params.pillar }} · Last verified {{ .Params.lastverified }}</p>
+    <p class="article-meta">{{ .ReadingTime }} {{ i18n "min_read" }} · {{ i18n "pillar_word" }}: {{ .Params.pillarlabel | default .Params.pillar }} · {{ i18n "last_verified" }} {{ .Params.lastverified }}</p>
     {{ with .Params.shortanswer }}
     <aside class="short-answer">
-      <p class="short-answer-label">The short answer</p>
+      <p class="short-answer-label">{{ i18n "short_answer" }}</p>
       <p>{{ . }}</p>
     </aside>
     {{ end }}
@@ -21,18 +21,18 @@
       {{ .Content }}
     </div>
     <aside class="sticky-note inline-note">
-      <p>Tip from Dawn Garden: revisit your plan each year, or after major life changes. Keep a copy with your executor for peace of mind.</p>
+      <p>{{ i18n "tip_note" }}</p>
     </aside>
     <div class="checklist-cta">
       <div>
-        <strong>Readiness Checklist: take the first step</strong>
-        <p>See exactly where your own plan stands, province by province, in about two minutes.</p>
+        <strong>{{ i18n "cta_head" }}</strong>
+        <p>{{ i18n "cta_text" }}</p>
       </div>
-      <a class="btn btn-gold" href="/tools/readiness-checklist/">Open the checklist →</a>
+      <a class="btn btn-gold" href="{{ "/tools/readiness-checklist/" | relLangURL }}">{{ i18n "cta_btn" }}</a>
     </div>
     {{ with .Params.faqs }}
     <section class="faq-section">
-      <h2>Common questions</h2>
+      <h2>{{ i18n "faq_head" }}</h2>
       {{ range . }}
       <div class="faq-item">
         <h3>{{ .q }}</h3>
@@ -42,14 +42,14 @@
     </section>
     {{ end }}
     <section class="sources-box">
-      <h2>Sources and last verified</h2>
-      <p>Last verified: {{ .Params.lastverified }}</p>
+      <h2>{{ i18n "sources_head" }}</h2>
+      <p>{{ i18n "sources_last" }} {{ .Params.lastverified }}</p>
       <ul>
         {{ range .Params.sources }}
         <li><a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a></li>
         {{ end }}
       </ul>
-      <p class="disclaimer-line">General information only, not legal advice. Laws vary by province and change over time. For your own situation, speak with a lawyer or, in Quebec, a notary in your province. See our full <a href="/disclaimer/">disclaimer</a>.</p>
+      <p class="disclaimer-line">{{ i18n "disclaimer_pre" }}<a href="{{ "/disclaimer/" | relLangURL }}">{{ i18n "disclaimer_link" }}</a>{{ i18n "disclaimer_post" }}</p>
     </section>
   </div>
   {{ $guides := sort (where site.RegularPages "Section" "guides") "Params.chapter" }}
@@ -61,8 +61,8 @@
     {{ end }}
   {{ end }}
   <nav class="chapter-nav" aria-label="Guides">
-    {{ with $prev }}<a class="btn btn-outline" href="{{ .RelPermalink }}">← Previous guide</a>{{ end }}
-    {{ with $next }}<a class="btn btn-sage" href="{{ .RelPermalink }}">Next guide →</a>{{ end }}
+    {{ with $prev }}<a class="btn btn-outline" href="{{ .RelPermalink }}">{{ i18n "prev_guide" }}</a>{{ end }}
+    {{ with $next }}<a class="btn btn-sage" href="{{ .RelPermalink }}">{{ i18n "next_guide" }}</a>{{ end }}
   </nav>
 </article>
 {{ end }}

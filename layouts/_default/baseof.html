@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html lang="{{ site.LanguageCode }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light only">
-<title>{{ if .IsHome }}Peaceful Plans · Your final chapter, well told{{ else }}{{ .Title }}{{ end }}</title>
+<title>{{ if .IsHome }}Peaceful Plans · {{ site.Params.tagline }}{{ else }}{{ .Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
+{{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{ end }}{{ $en := where .AllTranslations "Language.Lang" "en" }}{{ if $en }}{{ with index $en 0 }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}{{ end }}
 <meta property="og:site_name" content="Peaceful Plans">
 <meta property="og:type" content="{{ if and .IsPage (eq .Section "guides") }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ if .IsHome }}Peaceful Plans · Your final chapter, well told{{ else }}{{ .Title }}{{ end }}">
@@ -19,14 +21,14 @@
 <meta name="twitter:image" content="{{ site.Params.ogImage | absURL }}">
 {{ if .IsHome }}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Peaceful Plans","url":"https://peacefulplans.ca/","description":{{ site.Params.description | jsonify | safeJS }},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Peaceful Plans","url":{{ site.Home.Permalink | jsonify | safeJS }},"inLanguage":{{ site.LanguageCode | jsonify | safeJS }},"description":{{ site.Params.description | jsonify | safeJS }},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"}}
 </script>
 {{ else if and .IsPage (eq .Section "guides") }}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":{{ .Title | jsonify | safeJS }},"description":{{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ site.Params.description | jsonify | safeJS }}{{ end }},"datePublished":{{ .Date.Format "2006-01-02" | jsonify | safeJS }},"dateModified":{{ with .Params.lastverified }}{{ . | jsonify | safeJS }}{{ else }}{{ .Date.Format "2006-01-02" | jsonify | safeJS }}{{ end }},"mainEntityOfPage":{{ .Permalink | jsonify | safeJS }},"author":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"image":{{ site.Params.ogImage | absURL | jsonify | safeJS }}}
+{"@context":"https://schema.org","@type":"Article","inLanguage":{{ site.LanguageCode | jsonify | safeJS }},"headline":{{ .Title | jsonify | safeJS }},"description":{{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ site.Params.description | jsonify | safeJS }}{{ end }},"datePublished":{{ .Date.Format "2006-01-02" | jsonify | safeJS }},"dateModified":{{ with .Params.lastverified }}{{ . | jsonify | safeJS }}{{ else }}{{ .Date.Format "2006-01-02" | jsonify | safeJS }}{{ end }},"mainEntityOfPage":{{ .Permalink | jsonify | safeJS }},"author":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"publisher":{"@type":"Organization","name":"Peaceful Plans","url":"https://peacefulplans.ca/"},"image":{{ site.Params.ogImage | absURL | jsonify | safeJS }}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peacefulplans.ca/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://peacefulplans.ca/guides/"},{"@type":"ListItem","position":3,"name":{{ .Title | jsonify | safeJS }},"item":{{ .Permalink | jsonify | safeJS }}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":{{ i18n "crumb_home" | jsonify | safeJS }},"item":{{ site.Home.Permalink | jsonify | safeJS }}},{"@type":"ListItem","position":2,"name":{{ i18n "crumb_guides" | jsonify | safeJS }},"item":{{ "/guides/" | absLangURL | jsonify | safeJS }}},{"@type":"ListItem","position":3,"name":{{ .Title | jsonify | safeJS }},"item":{{ .Permalink | jsonify | safeJS }}}]}
 </script>
 {{ with .Params.faqs }}
 <script type="application/ld+json">

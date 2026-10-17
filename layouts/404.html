@@ -1,11 +1,11 @@
 {{ define "main" }}
 <section class="wrap" style="text-align:center;padding:4rem 1rem 5rem;">
   <p style="font-size:3rem;" aria-hidden="true">🌱</p>
-  <h1>This page has wandered off the path</h1>
-  <p>The page you are looking for is not here. It may have moved, or the address may have a small typo in it.</p>
+  <h1>{{ i18n "p404_h1" }}</h1>
+  <p>{{ i18n "p404_p" }}</p>
   <p>
-    <a class="btn btn-sage" href="/">Back to the homepage</a>
-    <a class="btn btn-outline" href="/guides/">Browse the guides</a>
+    <a class="btn btn-sage" href="{{ "/" | relLangURL }}">{{ i18n "p404_home" }}</a>
+    <a class="btn btn-outline" href="{{ "/guides/" | relLangURL }}">{{ i18n "p404_guides" }}</a>
   </p>
 </section>
 {{ end }}

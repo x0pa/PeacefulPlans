@@ -1,17 +1,27 @@
 {{ define "main" }}
 <section class="wrap article-wrap">
-  <p class="crumbs"><a href="/tools/">Tools</a> › {{ .Title }}</p>
+  <p class="crumbs"><a href="{{ "/tools/" | relLangURL }}">{{ i18n "crumb_tools" }}</a> › {{ .Title }}</p>
   <div class="reading-card">
     <h1>{{ .Title }}</h1>
     <p class="standfirst">{{ .Description }}</p>
     <div class="prose">{{ .Content }}</div>
     <form class="tool-form">
-      {{ $groups := slice
+      {{ $groups := slice }}
+      {{ if eq .Lang "fr" }}
+      {{ $groups = slice
+        (dict "name" "Identité et famille" "items" (slice "Pièce d'identité gouvernementale et dossier du numéro d'assurance sociale" "Certificat de naissance ou documents de citoyenneté" "Documents de mariage, d'union ou de divorce" "Le testament, et tout codicille" "Documents de directive et de procuration"))
+        (dict "name" "Argent et biens" "items" (slice "Liste des comptes bancaires et de placement, avec les institutions" "Polices d'assurance : vie, habitation, automobile et avantages collectifs" "Titres de propriété et documents hypothécaires" "Immatriculations des véhicules" "Désignations de bénéficiaires des comptes enregistrés"))
+        (dict "name" "Funérailles et arrangements finaux" "items" (slice "Documents du lot de cimetière ou volontés de crémation" "Contrat d'arrangements funéraires préalables, s'il en existe un" "Inscription au don d'organes et de tissus" "Lettres de volontés et liste de cadeaux personnels"))
+        (dict "name" "Impôts, travail et vie numérique" "items" (slice "Les deux dernières déclarations de revenus et la note sur le compte de l'Agence du revenu du Canada" "Coordonnées de l'employeur et des régimes de retraite" "Gestionnaire de mots de passe ou note sur les comptes numériques" "Liste de contacts : avocat ou notaire, comptable, maison funéraire"))
+      }}
+      {{ else }}
+      {{ $groups = slice
         (dict "name" "Identity and family" "items" (slice "Government identification and Social Insurance Number record" "Birth certificate or citizenship papers" "Marriage, partnership, or divorce papers" "The will, and any codicils" "Directive and power of attorney documents"))
         (dict "name" "Money and property" "items" (slice "Bank and investment account list, with institutions" "Insurance policies: life, home, auto, and group benefits" "Property deeds and mortgage papers" "Vehicle registrations" "Registered account beneficiary designations"))
         (dict "name" "Funeral and final arrangements" "items" (slice "Burial plot papers or cremation wishes" "Funeral prearrangement contract, if one exists" "Organ and tissue donation registration" "Letters of wishes and personal gifts list"))
         (dict "name" "Taxes, work, and digital life" "items" (slice "Last two tax returns and Canada Revenue Agency account note" "Employer and pension contact details" "Password manager or digital accounts note" "Contact list: lawyer or notary, accountant, funeral home"))
       }}
+      {{ end }}
       {{ range $groups }}
       <fieldset class="check-group">
         <legend>{{ .name }}</legend>
@@ -19,13 +29,13 @@
         <label class="doc-row">
           <input type="checkbox" class="ck">
           <span>{{ . }}</span>
-          <input type="text" class="where" placeholder="Where it lives" aria-label="Where it lives: {{ . }}">
+          <input type="text" class="where" placeholder="{{ i18n "docs_where" }}" aria-label="{{ i18n "docs_where" }}: {{ . }}">
         </label>
         {{ end }}
       </fieldset>
       {{ end }}
-      <p class="tool-actions"><button type="button" class="btn btn-sage" onclick="window.print()">Print this checklist</button></p>
-      <p class="tool-note">Nothing you type here is sent anywhere or stored. Print it, fill the rest in by hand if you prefer, and keep it where your executor can find it. General information only, not legal advice.</p>
+      <p class="tool-actions"><button type="button" class="btn btn-sage" onclick="window.print()">{{ i18n "docs_print" }}</button></p>
+      <p class="tool-note">{{ i18n "docs_note" }}</p>
     </form>
   </div>
 </section>

@@ -1,15 +1,15 @@
 <footer class="site-footer">
   <div class="wrap">
-    <p class="footer-line">Made for Canadians across provinces · Clear · Compassionate · Practical</p>
+    <p class="footer-line">{{ i18n "footer_line" }}</p>
     <nav class="footer-nav" aria-label="Footer">
-      <a href="/guides/">Guides</a>
-      <a href="/tools/">Tools</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a href="/privacy/">Privacy Policy</a>
-      <a href="/disclaimer/">Disclaimer</a>
+      <a href="{{ "/guides/" | relLangURL }}">{{ i18n "nav_guides" }}</a>
+      <a href="{{ "/tools/" | relLangURL }}">{{ i18n "nav_tools" }}</a>
+      <a href="{{ "/about/" | relLangURL }}">{{ i18n "nav_about" }}</a>
+      <a href="{{ "/contact/" | relLangURL }}">{{ i18n "nav_contact" }}</a>
+      <a href="{{ "/privacy/" | relLangURL }}">{{ i18n "nav_privacy" }}</a>
+      <a href="{{ "/disclaimer/" | relLangURL }}">{{ i18n "nav_disclaimer" }}</a>
     </nav>
-    <p class="footer-note">Peaceful Plans shares general information about how the rules generally work in Canada. It is not legal advice. For your own situation, speak with a lawyer or, in Quebec, a notary in your province.</p>
-    <p class="footer-copy">© 2026 Peaceful Plans · Canada 🍁 · A <a href="https://darkhaus.studio">Dark Haus Studio</a> site</p>
+    <p class="footer-note">{{ i18n "footer_note" }}</p>
+    <p class="footer-copy">{{ i18n "footer_credit_pre" }}<a href="https://darkhaus.studio">Dark Haus Studio</a>{{ i18n "footer_credit_post" }}</p>
   </div>
 </footer>

@@ -1,33 +1,33 @@
 {{ define "main" }}
 <section class="wrap article-wrap">
-  <p class="crumbs"><a href="/tools/">Tools</a> › {{ .Title }}</p>
+  <p class="crumbs"><a href="{{ "/tools/" | relLangURL }}">{{ i18n "crumb_tools" }}</a> › {{ .Title }}</p>
   <div class="reading-card">
     <h1>{{ .Title }}</h1>
     <p class="standfirst">{{ .Description }}</p>
     <div class="prose">{{ .Content }}</div>
     <form class="tool-form" id="probateForm">
       <label class="field">
-        <span>Province</span>
+        <span>{{ i18n "prob_label_province" }}</span>
         <select id="probateProvince">
-          <option value="MB" selected>Manitoba</option>
-          <option value="ON">Ontario</option>
-          <option value="BC">British Columbia</option>
-          <option value="AB">Alberta</option>
-          <option value="SK">Saskatchewan</option>
+          <option value="MB" selected>{{ i18n "prov_MB" }}</option>
+          <option value="ON">{{ i18n "prov_ON" }}</option>
+          <option value="BC">{{ i18n "prov_BC" }}</option>
+          <option value="AB">{{ i18n "prov_AB" }}</option>
+          <option value="SK">{{ i18n "prov_SK" }}</option>
         </select>
       </label>
       <label class="field">
-        <span>Estate value (Canadian dollars)</span>
+        <span>{{ i18n "prob_label_value" }}</span>
         <input type="number" id="estateValue" min="0" step="1000" value="350000">
       </label>
-      <p><button type="button" class="btn btn-sage" id="calcBtn">Calculate the court fee</button></p>
+      <p><button type="button" class="btn btn-sage" id="calcBtn">{{ i18n "prob_btn" }}</button></p>
       <div class="tool-result" aria-live="polite">
-        <p class="result-head" id="probateResult">Your estimate will appear here.</p>
+        <p class="result-head" id="probateResult">{{ i18n "prob_result" }}</p>
         <p id="probateDetail"></p>
       </div>
-      <p class="tool-note">This estimates the court fee or estate administration tax only. It is never the full cost of settling an estate, which can include legal fees, accounting, and taxes owed by the estate. Schedules are drawn from the provincial court and government sources listed below and carry the last verified date shown. Quebec is not in this calculator: a notarial will there does not go through court verification, and other wills follow a different process. General information only, not legal advice.</p>
+      <p class="tool-note">{{ i18n "prob_note" }}</p>
       <div class="sources-box">
-        <h2>Fee schedule sources</h2>
+        <h2>{{ i18n "prob_sources_head" }}</h2>
         <ul>
           <li><a href="https://www.manitoba.ca/justice/courts/" rel="noopener" target="_blank">Manitoba Courts and the Court of King’s Bench</a></li>
           <li><a href="https://www.ontario.ca/page/managing-assets-someone-who-has-died" rel="noopener" target="_blank">Ontario: managing the assets of someone who has died</a></li>
@@ -35,10 +35,10 @@
           <li><a href="https://www.alberta.ca/grant-of-probate" rel="noopener" target="_blank">Alberta: grant of probate</a></li>
           <li><a href="https://www.saskatchewan.ca/residents/family-and-social-support/end-of-life-and-dying" rel="noopener" target="_blank">Saskatchewan: end of life and estates information</a></li>
         </ul>
-        <p>Last verified: 2026-10-15</p>
+        <p>{{ i18n "prob_last" }}</p>
       </div>
     </form>
   </div>
 </section>
 {{ end }}
-{{ define "scripts" }}<script src="/js/probate.js"></script>{{ end }}
+{{ define "scripts" }}<script src="/js/probate{{ if eq .Lang "fr" }}.fr{{ end }}.js"></script>{{ end }}

@@ -4,11 +4,11 @@
 {{ if eq .Params.pillar "When Someone Dies" }}{{ $ribbon = "ribbon-clay" }}{{ end }}
 {{ if eq .Params.pillar "Executors and Probate" }}{{ $ribbon = "ribbon-clay" }}{{ end }}
 <article class="chapter-card">
-  <span class="ribbon {{ $ribbon }}">{{ .Params.pillar }}</span>
+  <span class="ribbon {{ $ribbon }}">{{ .Params.pillarlabel | default .Params.pillar }}</span>
   <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   <p>{{ .Description }}</p>
   <div class="card-meta">
-    <span class="pill">{{ .ReadingTime }} min read · {{ .Params.pillar }}</span>
-    <a class="read-link" href="{{ .RelPermalink }}">Read guide →</a>
+    <span class="pill">{{ .ReadingTime }} {{ i18n "min_read" }} · {{ .Params.pillarlabel | default .Params.pillar }}</span>
+    <a class="read-link" href="{{ .RelPermalink }}">{{ i18n "read_guide" }}</a>
   </div>
 </article>

@@ -9,7 +9,7 @@
       <article class="tool-card">
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p>{{ .Description }}</p>
-        <a class="read-link" href="{{ .RelPermalink }}">Open tool →</a>
+        <a class="read-link" href="{{ .RelPermalink }}">{{ i18n "open_tool" }}</a>
       </article>
       {{ end }}
     {{ else }}

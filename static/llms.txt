@@ -31,3 +31,7 @@
 - Probate fees: Manitoba charges no probate fee since 2020. Ontario charges no Estate Administration Tax on the first 50,000 dollars, then 1.5 percent above that. British Columbia charges a 200 dollar basic fee plus 0.6 percent between 25,000 and 50,000 dollars and 1.4 percent above 50,000 dollars. Alberta charges flat court fees by band, topping out at 525 dollars. Saskatchewan charges a 200 dollar local registrar fee plus 7 dollars per 1,000 dollars of estate value. Quebec is not in the calculator because a notarial will there does not go through court verification.
 - Benefit amounts and how to apply for the CPP death benefit and survivor benefits are covered by the sister site EveryBenefit at https://everybenefit.ca, not here.
 - Funeral contract disputes and consumer rights belong to the sister site Know Your Rights Canada at https://knowyourrightscanada.ca.
+
+## French edition
+
+- The full site is also published in Canadian French under https://peacefulplans.ca/fr/ — every guide, tool, and trust page is a complete translation (testaments, procurations, directives médicales, homologation, lots de cimetière), with French versions of the readiness checklist and probate fee calculator.

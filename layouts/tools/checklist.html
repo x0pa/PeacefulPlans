@@ -1,56 +1,56 @@
 {{ define "main" }}
 <section class="wrap article-wrap">
-  <p class="crumbs"><a href="/tools/">Tools</a> › {{ .Title }}</p>
+  <p class="crumbs"><a href="{{ "/tools/" | relLangURL }}">{{ i18n "crumb_tools" }}</a> › {{ .Title }}</p>
   <div class="reading-card">
     <h1>{{ .Title }}</h1>
     <p class="standfirst">{{ .Description }}</p>
     <div class="prose">{{ .Content }}</div>
     <form class="tool-form" id="checklistForm">
       <label class="field">
-        <span>Your province or territory</span>
+        <span>{{ i18n "check_label_province" }}</span>
         <select id="provinceSelect">
-          <option value="MB" selected>Manitoba</option>
-          <option value="ON">Ontario</option>
-          <option value="BC">British Columbia</option>
-          <option value="AB">Alberta</option>
-          <option value="SK">Saskatchewan</option>
-          <option value="QC">Quebec</option>
-          <option value="NS">Nova Scotia</option>
-          <option value="NB">New Brunswick</option>
-          <option value="PE">Prince Edward Island</option>
-          <option value="NL">Newfoundland and Labrador</option>
-          <option value="YT">Yukon</option>
-          <option value="NT">Northwest Territories</option>
-          <option value="NU">Nunavut</option>
+          <option value="MB" selected>{{ i18n "prov_MB" }}</option>
+          <option value="ON">{{ i18n "prov_ON" }}</option>
+          <option value="BC">{{ i18n "prov_BC" }}</option>
+          <option value="AB">{{ i18n "prov_AB" }}</option>
+          <option value="SK">{{ i18n "prov_SK" }}</option>
+          <option value="QC">{{ i18n "prov_QC" }}</option>
+          <option value="NS">{{ i18n "prov_NS" }}</option>
+          <option value="NB">{{ i18n "prov_NB" }}</option>
+          <option value="PE">{{ i18n "prov_PE" }}</option>
+          <option value="NL">{{ i18n "prov_NL" }}</option>
+          <option value="YT">{{ i18n "prov_YT" }}</option>
+          <option value="NT">{{ i18n "prov_NT" }}</option>
+          <option value="NU">{{ i18n "prov_NU" }}</option>
         </select>
       </label>
       <p class="doc-names" id="docNames"></p>
       <fieldset class="check-group">
-        <legend>Tick what is already in place</legend>
-        <label class="check"><input type="checkbox" class="ck"> <span>A will, signed and witnessed the way my province requires</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span id="lblDirective">A directive naming who can make care decisions for me</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span id="lblPoa">A power of attorney naming who can handle money and property for me</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>An executor who knows they are named, and who knows where my will lives</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>A backup executor, in case my first choice cannot act</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>My funeral wishes written down, burial or cremation and plot or no plot</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>Guardians named for my minor children, if that applies to me</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>Beneficiary designations reviewed on insurance and registered accounts</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>A documents list for my executor: accounts, policies, deeds, and where each one lives</span></label>
-        <label class="check"><input type="checkbox" class="ck"> <span>A note about my digital accounts and how my executor can find them</span></label>
+        <legend>{{ i18n "check_legend" }}</legend>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i1" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span id="lblDirective">{{ i18n "check_lbl_directive" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span id="lblPoa">{{ i18n "check_lbl_poa" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i4" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i5" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i6" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i7" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i8" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i9" }}</span></label>
+        <label class="check"><input type="checkbox" class="ck"> <span>{{ i18n "check_i10" }}</span></label>
       </fieldset>
       <div class="tool-result" id="checklistResult" aria-live="polite">
         <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-        <p class="result-head" id="resultHead">Your readiness: 0 of 10 in place</p>
-        <p id="resultText">Tick the items above and your personal list of what is missing will appear here, with links to the guides that walk through each one.</p>
+        <p class="result-head" id="resultHead">{{ i18n "check_result_head" }}</p>
+        <p id="resultText">{{ i18n "check_result_text" }}</p>
         <ul id="missingList"></ul>
       </div>
       <p class="tool-actions">
-        <button type="button" class="btn btn-sage" onclick="window.print()">Print my checklist</button>
-        <a class="btn btn-outline" href="/tools/documents-checklist/">Open the documents checklist</a>
+        <button type="button" class="btn btn-sage" onclick="window.print()">{{ i18n "check_print" }}</button>
+        <a class="btn btn-outline" href="{{ "/tools/documents-checklist/" | relLangURL }}">{{ i18n "check_open_docs" }}</a>
       </p>
-      <p class="tool-note">Nothing you tick or type here is sent anywhere or stored. It all stays in your browser, on this device. General information only, not legal advice.</p>
+      <p class="tool-note">{{ i18n "check_note" }}</p>
     </form>
   </div>
 </section>
 {{ end }}
-{{ define "scripts" }}<script src="/js/checklist.js"></script>{{ end }}
+{{ define "scripts" }}<script src="/js/checklist{{ if eq .Lang "fr" }}.fr{{ end }}.js"></script>{{ end }}
