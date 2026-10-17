@@ -36,7 +36,10 @@
 {{ end }}
 <link rel="stylesheet" href="/fonts/fonts.css">
 <link rel="stylesheet" href="/css/main.css?v={{ site.Params.cssVersion }}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 {{ with site.Params.gaID }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ . }}');</script>
