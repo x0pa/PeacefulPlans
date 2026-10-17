@@ -152,6 +152,4 @@ a{color:var(--sage-deep)}
 .faq-item h3{margin-bottom:.3rem}
 .faq-item p{margin-top:0}
 
-/* Language switcher (French edition, 2026-10-17) */
-.lang-link{border:1.5px solid var(--sage);border-radius:999px;padding:.18rem .7rem;font-weight:700;color:var(--sage-deep) !important;background:var(--card)}
-.lang-link:hover{background:var(--sage);color:#fff !important}
+/* Language switcher: deliberately unstyled so it matches the other menu items exactly (Dade, 2026-10-17) */

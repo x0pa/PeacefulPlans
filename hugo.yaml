@@ -29,5 +29,5 @@ languages:
       tagline: "Votre dernier chapitre, bien raconté."
 params:
   ogImage: "/images/hero-sunrise.webp"
-  cssVersion: "20261017"
+  cssVersion: "20261017b"
   gaID: "G-Q48FE4KGMQ"
