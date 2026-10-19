@@ -6,7 +6,7 @@ chapter: 6
 pillar: "Funerals and Burial"
 pillarlabel: "Funérailles et inhumation"
 description: "Acheter un lot de cimetière au Canada signifie acheter des droits d'inhumation, pas un terrain. Ce que le droit couvre, ce qu'il coûte et où les détails se trouvent dans le contrat."
-lastverified: 2026-10-15
+lastverified: 2026-10-19
 sources:
   - name: "Bereavement Authority of Ontario"
     url: "https://thebao.ca/"
@@ -14,8 +14,8 @@ sources:
     url: "https://www.consumerprotectionbc.ca/"
   - name: "Alberta Funeral Service Regulatory Board"
     url: "https://www.afsrb.ca/"
-  - name: "Funeral Board of Manitoba"
-    url: "https://www.funeralboard.mb.ca/"
+  - name: "Consumer Protection Office, Manitoba"
+    url: "https://www.gov.mb.ca/cp/cpo/"
 shortanswer: "Acheter un lot de cimetière au Canada signifie acheter des droits d'inhumation : le droit d'être inhumé dans un espace précis que le cimetière continue de posséder et d'entretenir. Les détails qui comptent, ce que le droit comprend, ce qu'il en coûte pour ouvrir et fermer la fosse et ce qui arrive si vous déménagez, se trouvent dans le contrat d'achat et les règlements du cimetière, alors lisez les deux avant de payer."
 faqs:
   - q: "Suis-je propriétaire du terrain quand j'achète un lot de cimetière ?"
@@ -76,7 +76,7 @@ Ces frais varient selon le type d'inhumation, le jour de la semaine et parfois l
 
 ## La réglementation et vos dossiers
 
-Les cimetières et les services funéraires sont réglementés province par province. L'Ontario a la Bereavement Authority of Ontario. La Colombie-Britannique traite les services funéraires et les cimetières par l'entremise de Consumer Protection BC. L'Alberta a son Funeral Service Regulatory Board. Le Manitoba a son Funeral Board. Les autres provinces ont leurs propres ministères ou conseils, et le Québec supervise son secteur funéraire selon ses propres lois et bureaux, en français d'abord, avec ses propres règles de contrat. Où que vous habitiez, un organisme de réglementation existe, et c'est l'endroit où confirmer qu'un cimetière détient un permis avant que l'argent ne change de mains.
+Les cimetières et les services funéraires sont réglementés province par province. L'Ontario a la Bereavement Authority of Ontario. La Colombie-Britannique traite les services funéraires et les cimetières par l'entremise de Consumer Protection BC. L'Alberta a son Funeral Service Regulatory Board. Le Manitoba passe par son Consumer Protection Office. Les autres provinces ont leurs propres ministères ou conseils, et le Québec supervise son secteur funéraire selon ses propres lois et bureaux, en français d'abord, avec ses propres règles de contrat. Où que vous habitiez, un organisme de réglementation existe, et c'est l'endroit où confirmer qu'un cimetière détient un permis avant que l'argent ne change de mains.
 
 Gardez vos papiers comme s'ils comptaient, parce qu'ils comptent. Le contrat de droits d'inhumation, le reçu, les règlements et tout document relatif à un monument devraient se trouver avec votre testament et vos autres papiers de fin de vie, avec une copie pour votre exécuteur testamentaire. Quand un décès survient, le salon funéraire demandera qui détient les droits et où se trouvent les documents. Une famille capable de répondre en quelques minutes, au milieu de la pire semaine de sa vie, est une famille qui a reçu un cadeau discret des années plus tôt.
 

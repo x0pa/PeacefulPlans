@@ -5,7 +5,7 @@ date: 2026-10-15
 chapter: 6
 pillar: "Funerals and Burial"
 description: "Buying a burial plot in Canada means buying interment rights, not land. What the right covers, what it costs, and where the details live in the contract."
-lastverified: 2026-10-15
+lastverified: 2026-10-19
 sources:
   - name: "Bereavement Authority of Ontario"
     url: "https://thebao.ca/"
@@ -13,8 +13,8 @@ sources:
     url: "https://www.consumerprotectionbc.ca/"
   - name: "Alberta Funeral Service Regulatory Board"
     url: "https://www.afsrb.ca/"
-  - name: "Funeral Board of Manitoba"
-    url: "https://www.funeralboard.mb.ca/"
+  - name: "Consumer Protection Office, Manitoba"
+    url: "https://www.gov.mb.ca/cp/cpo/"
 shortanswer: "Buying a burial plot in Canada means buying interment rights: the right to be buried in a particular space that the cemetery continues to own and maintain. The details that matter, what the right includes, what it costs to open and close the grave, and what happens if you move, live in the purchase contract and the cemetery bylaws, so read both before paying."
 faqs:
   - q: "Do I own the land when I buy a burial plot?"
@@ -75,7 +75,7 @@ These fees vary by the type of burial, by the day of the week, and sometimes by 
 
 ## Regulation and your records
 
-Cemeteries and funeral services are regulated province by province. Ontario has the Bereavement Authority of Ontario. British Columbia handles funeral services and cemeteries through Consumer Protection BC. Alberta has its Funeral Service Regulatory Board. Manitoba has its Funeral Board. Other provinces have their own departments or boards, and Quebec oversees its funeral sector under its own legislation and offices, in French first, with its own contract rules. Wherever you live, a regulator exists, and it is the place to confirm a cemetery is licensed before money moves.
+Cemeteries and funeral services are regulated province by province. Ontario has the Bereavement Authority of Ontario. British Columbia handles funeral services and cemeteries through Consumer Protection BC. Alberta has its Funeral Service Regulatory Board. Manitoba handles it through its Consumer Protection Office. Other provinces have their own departments or boards, and Quebec oversees its funeral sector under its own legislation and offices, in French first, with its own contract rules. Wherever you live, a regulator exists, and it is the place to confirm a cemetery is licensed before money moves.
 
 Keep your paperwork like it matters, because it does. The interment rights contract, the receipt, the bylaws, and any marker documents should live with your will and your other end of life papers, with a copy for your executor. When a death happens, the funeral home will ask who holds the rights and where the documents are. A family that can answer in minutes, in the middle of the worst week of their lives, is a family that was given a quiet gift years earlier.
 
