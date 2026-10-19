@@ -7,6 +7,7 @@
 <title>{{ if .IsHome }}Peaceful Plans · {{ site.Params.tagline }}{{ else }}{{ .Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ .Site.Title }}">
 {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
 {{ end }}{{ $en := where .AllTranslations "Language.Lang" "en" }}{{ if $en }}{{ with index $en 0 }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}{{ end }}
 <meta property="og:site_name" content="Peaceful Plans">

@@ -3,7 +3,7 @@ title: "Peaceful Plans"
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
 enableRobotsTXT: true
-disableKinds: ["taxonomy", "term", "RSS"]
+disableKinds: ["taxonomy", "term"]
 summaryLength: 30
 markup:
   goldmark:
