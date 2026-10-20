@@ -41,6 +41,8 @@ A will governs more than most people expect, and less than many assume. Some ass
 
 Pension survivor benefits follow the rules of the pension plan and the law behind it, not your will. This is why a will works best as one part of a small set of papers that agree with each other. When you make or update a will, it is worth glancing at the beneficiary forms on your accounts and insurance, and making sure the two tell the same story.
 
+Retirement brings its own stack of decisions into the same few years: pension start dates, supplements, and beneficiary forms all come due together. EveryBenefit keeps a [turning 65 checklist](https://everybenefit.ca/posts/turning-65-checklist/) that walks through every benefit decision in the order it arrives.
+
 ## If there is no will, intestacy steps in
 
 Dying without a will is called dying intestate, and every province and territory has an intestacy law that answers three questions in a fixed order. Who is entitled to share in the estate? In what proportions? And who may apply to the court to administer it all?

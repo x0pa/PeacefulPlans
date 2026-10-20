@@ -42,6 +42,8 @@ Un testament régit plus que ce que la plupart des gens s'imaginent, et moins qu
 
 Les prestations de survivant d'un régime de retraite suivent les règles du régime de retraite et de la loi qui le sous-tend, et non votre testament. C'est pourquoi un testament fonctionne le mieux comme une partie d'un petit ensemble de documents qui concordent entre eux. Quand vous faites ou mettez à jour un testament, il vaut la peine de jeter un coup d'œil aux formulaires de bénéficiaires de vos comptes et de vos assurances, et de vous assurer que les deux racontent la même histoire.
 
+La retraite amène son propre lot de décisions dans les mêmes quelques années : dates de début des pensions, suppléments et formulaires de bénéficiaires arrivent tous en même temps. EveryBenefit tient une [liste de vérification pour les 65 ans](https://everybenefit.ca/fr/posts/turning-65-checklist/) qui présente chaque décision de prestation dans l'ordre où elle se présente.
+
 ## S'il n'y a pas de testament, la succession ab intestat s'applique
 
 Mourir sans testament, c'est mourir ab intestat, et chaque province et territoire a une loi sur les successions ab intestat qui répond à trois questions dans un ordre fixe. Qui a le droit de partager la succession ? Dans quelles proportions ? Et qui peut s'adresser au tribunal pour administrer le tout ?
