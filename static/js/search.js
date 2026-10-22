@@ -18,8 +18,15 @@
       box.innerHTML="";
       if(q.length<2){setStatus("");return;}
       var found=0;
+      var words=nq.split(/\s+/).filter(function(w){return w.length>=2;});
+      function hit(text){
+        return words.every(function(w){
+          var stem=w.length>3&&w.slice(-1)==="s"?w.slice(0,-1):w;
+          return text.indexOf(w)>=0||text.indexOf(stem)>=0;
+        });
+      }
       pages.filter(function(p){
-        return norm(p.title).indexOf(nq)>=0||norm(p.topic).indexOf(nq)>=0||norm(p.summary).indexOf(nq)>=0;
+        return hit(norm(p.title)+" "+norm(p.topic)+" "+norm(p.summary));
       }).slice(0,12).forEach(function(p){
         var a=document.createElement("a");
         a.className="guide-card"; a.href=p.url;
