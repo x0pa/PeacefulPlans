@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="wrap page search-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <label class="sr-only" for="pp-search-input">{{ i18n "search_label" }}</label>
+  <input type="search" id="pp-search-input" class="big-search" placeholder="{{ i18n "search_placeholder" }}" autocomplete="off">
+  <p class="sr-only" id="pp-search-status" role="status"></p>
+  <div id="pp-search-results" class="guide-grid search-results"></div>
+</main>
+<script>window.PP_SEARCH={indexUrl:"{{ "search-index.json" | relLangURL }}",noResults:"{{ i18n "search_noresults" }}",browseText:"{{ i18n "search_browse" }}",guidesUrl:"{{ "/guides/" | relLangURL }}",resultWord:"{{ i18n "search_result" }}",resultsWord:"{{ i18n "search_results" }}",forWord:"{{ i18n "search_for" }}"};</script>
+<script src="/js/search.js?v=20261022" defer></script>
+{{ end }}

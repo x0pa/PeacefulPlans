@@ -27,7 +27,18 @@ languages:
     params:
       description: "Testaments, directives médicales, liquidateurs, funérailles et lots de cimetière expliqués en langage clair pour les Canadiens."
       tagline: "Votre dernier chapitre, bien raconté."
+outputFormats:
+  SearchIndex:
+    baseName: search-index
+    mediaType: application/json
+    isPlainText: true
+    notAlternative: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - SearchIndex
 params:
   ogImage: "/images/hero-sunrise.webp"
-  cssVersion: "20261017b"
+  cssVersion: "20261022a"
   gaID: "G-Q48FE4KGMQ"

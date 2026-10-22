@@ -153,3 +153,8 @@ a{color:var(--sage-deep)}
 .faq-item p{margin-top:0}
 
 /* Language switcher: deliberately unstyled so it matches the other menu items exactly (Dade, 2026-10-17) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.big-search{width:100%;font:inherit;font-size:1.1rem;padding:16px 20px;border:2px solid var(--line,#E3DCE8);border-radius:14px;background:#fff;color:var(--ink,#3E3340);margin:10px 0 22px}
+.big-search:focus{outline:3px solid var(--gold,#D9A441);outline-offset:2px;border-color:var(--plum,#5B4A5A)}
+.search-results{margin-top:6px}
+.search-none{background:#fff;border:1px solid var(--line,#E3DCE8);border-radius:14px;padding:18px 20px}

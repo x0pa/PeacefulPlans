@@ -9,6 +9,7 @@
       <a href="{{ "/tools/" | relLangURL }}">{{ i18n "nav_tools" }}</a>
       <a href="{{ "/about/" | relLangURL }}">{{ i18n "nav_about" }}</a>
       <a href="{{ "/contact/" | relLangURL }}">{{ i18n "nav_contact" }}</a>
+      <a href="{{ "/search/" | relLangURL }}">{{ i18n "nav_search" }}</a>
       {{ if .Translations }}{{ range .Translations }}<a class="lang-link" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>{{ end }}{{ else }}{{ range site.Sites }}{{ if ne .Language.Lang $.Language.Lang }}<a class="lang-link" href="{{ .Home.Permalink }}">{{ .Language.LanguageName }}</a>{{ end }}{{ end }}{{ end }}
     </nav>
   </div>

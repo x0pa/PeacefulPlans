@@ -1,0 +1,6 @@
+{{- $items := slice -}}
+{{- range where .Site.RegularPages "Section" "in" (slice "guides" "tools") -}}
+  {{- $topic := .Params.pillarlabel | default .Params.pillar | default (i18n "nav_tools") -}}
+  {{- $items = $items | append (dict "title" .Title "topic" $topic "summary" .Description "url" .RelPermalink) -}}
+{{- end -}}
+{{- dict "pages" $items | jsonify -}}
