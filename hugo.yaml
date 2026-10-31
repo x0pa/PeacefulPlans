@@ -40,5 +40,5 @@ outputs:
     - SearchIndex
 params:
   ogImage: "/images/hero-sunrise.webp"
-  cssVersion: "20261022a"
+  cssVersion: "20261031a"
   gaID: "G-Q48FE4KGMQ"
